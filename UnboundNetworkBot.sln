@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnboundNetworkBot", "UnboundNetworkBot\UnboundNetworkBot.csproj", "{14BDB767-3C2A-46AA-946C-1B846F74749F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14BDB767-3C2A-46AA-946C-1B846F74749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BDB767-3C2A-46AA-946C-1B846F74749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BDB767-3C2A-46AA-946C-1B846F74749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BDB767-3C2A-46AA-946C-1B846F74749F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {665AB4FA-67F0-463B-ACD0-8B4830F28056}
+	EndGlobalSection
+EndGlobal
