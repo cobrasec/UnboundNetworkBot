@@ -57,26 +57,6 @@ namespace UnboundNetworkBot.Core.Commands
             await channel.Guild.GetTextChannel(id).SendMessageAsync($"{ user.Username}'s info has been provided.", false, Embed.Build());
         }
 
-        //ulong id = 627232316191801384;
-
-
-        // await Context.Client.channel.GetChannel(489175046317670412).SendMessageAsync("test");
-
-        //ulong guild = 489175046317670410;
-        // var channel = Context.Guild.GetTextChannelAsync(id);
-
-        //await channel.SendMessageAsync("test");
-
-        // await ((ISocketMessageChannel)_client.GetChannel(627232316191801384)).SendMessageAsync("test");
-
-        //await Context.Channel.SendMessageAsync($"{ user.Username}'s info has been provided.", false, Embed.Build());
-
-        //await channel.SendMessageAsync($"{ user.Username}'s info has been provided.", false, Embed.Build());
-
-
-
-
-        //  }
 
         [Command("say")]
         public async Task SayTest([Remainder] string message)
