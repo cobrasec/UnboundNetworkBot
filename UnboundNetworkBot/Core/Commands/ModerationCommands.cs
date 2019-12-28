@@ -44,10 +44,7 @@ namespace UnboundNetworkBot.Core.Commands
 
             Embed.WithFields();
             Embed.WithThumbnailUrl(user.GetAvatarUrl());
-
-            //This is here to commit a this code
             
-
             await Context.Channel.SendMessageAsync($"{ user.Username}'s info has been provided.", false, Embed.Build());
         }
 
@@ -60,8 +57,6 @@ namespace UnboundNetworkBot.Core.Commands
 
         public async Task Kick(IGuildUser user = null, [Remainder] string reason = "Reason not provided.")
         {
-
-
 
             EmbedBuilder Embed = new EmbedBuilder();
             if (user == null)
