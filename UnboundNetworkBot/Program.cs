@@ -30,7 +30,7 @@ namespace UnboundNetworkBot
             Commands = new CommandService(new CommandServiceConfig
             {
                 LogLevel = LogSeverity.Debug
-            });
+            }); 
 
             var token = File.ReadAllText("Token.txt");
             
