@@ -48,7 +48,7 @@ namespace UnboundNetworkBot.Core.Commands
             await Context.Channel.SendMessageAsync($"{ user.Username}'s info has been provided.", false, Embed.Build());
         }
 
-
+        //Webhook test
 
 
         [Command("Kick"), Summary("Kicks a specified user")]
