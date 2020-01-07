@@ -39,7 +39,7 @@ namespace UnboundNetworkBot
                 .BuildServiceProvider();
 
             await InstallCommandsAsync();
-            await _client.SetGameAsync("Hi! I am bot nice to meet you!");
+            await _client.SetGameAsync("This is a bot for UnboundNetwork. I do stuff!");
             await _client.LoginAsync(TokenType.Bot, token);
             await _client.StartAsync();
             _client.Log += LogAsync;
@@ -91,16 +91,22 @@ namespace UnboundNetworkBot
 
         public async Task AnnounceJoinedUser(SocketGuildUser user) //Welcomes the new user
         {
+
+
             var channel = _client.GetChannel(489175046317670412) as SocketTextChannel; 
             await channel.SendMessageAsync($"Welcome {user.Mention} to {channel.Guild.Name}"); //Welcomes the new user
             return;
+            
         }
 
 
-       // public async Task AnnounceUserLeft(SocketGuildUser user)
-        //{
-            //will add this later on.
-        //}
+         public async Task AnnounceUserLeft(SocketGuildUser user)
+         {
+            var channel = _client.GetChannel(489175046317670412) as SocketTextChannel;
+            await channel.SendMessageAsync($"{user.Mention} has left {channel.Guild.Name} :cry:"); //Welcomes the new user
+            return;
+
+         }
 
 
         private Task LogAsync(LogMessage logMessage)
