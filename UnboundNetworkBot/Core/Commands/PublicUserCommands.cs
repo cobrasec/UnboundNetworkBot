@@ -25,7 +25,8 @@ namespace UnboundNetworkBot.Core.Commands
                     "Discord or Skype?",
                     "Pokemon or Digimon?",
                     "Laptop or Desktop?",
-                    "Will add more please bear with me."
+                    "Will add more please bear with me.",
+                    "Pie and cake are the same thing.",
                 };
             int randomArgument = rand.Next(Argument.Length);
             string randomArgumentToPost = Argument[randomArgument];
@@ -92,6 +93,9 @@ namespace UnboundNetworkBot.Core.Commands
             await Context.Channel.SendMessageAsync(wouldYouRatherToPost);
 
         }
+
+
+
 
     }
 }

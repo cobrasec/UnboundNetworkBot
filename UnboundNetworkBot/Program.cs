@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Discord;
@@ -14,7 +15,6 @@ namespace UnboundNetworkBot
         private CommandService _commands;
         private DiscordSocketClient _client;
         private IServiceProvider _services;
-
         public CommandService Commands { get => _commands; set => _commands = value; }
 
         static void Main(string[] args)
@@ -44,6 +44,9 @@ namespace UnboundNetworkBot
             await _client.StartAsync();
             _client.Log += LogAsync;
             await Task.Delay(-1);
+
+
+
 
             
 
@@ -115,7 +118,7 @@ namespace UnboundNetworkBot
             return Task.CompletedTask;
         }
 
-      
+
 
 
     }

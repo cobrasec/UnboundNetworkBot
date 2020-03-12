@@ -46,6 +46,8 @@ namespace UnboundNetworkBot.Core.Commands
             Embed.WithThumbnailUrl(user.GetAvatarUrl());
 
             await Context.Channel.SendMessageAsync("yoink", false, Embed.Build());
+
+
         }
 
 
@@ -179,7 +181,8 @@ namespace UnboundNetworkBot.Core.Commands
 
 
 
-        [Command("help")]
+        [Command("modhelp")]
+        [RequireUserPermission(GuildPermission.BanMembers)]
         public async Task Help()
         {
 
@@ -214,7 +217,6 @@ namespace UnboundNetworkBot.Core.Commands
 
 
         }
-
 
 
 
